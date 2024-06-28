@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>1° Formulario</h2>
+    <form action="ruta_a_tu_script_de_procesamiento" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="tipo_usuario">Tipo de Usuario:</label><br>
+        <select id="tipo_usuario" name="tipo_usuario" required>
+            <option value="administrador">Administrador</option>
+            <option value="usuario">Usuario</option>
+            <option value="invitado">Invitado</option>
+        </select><br><br>
+
+        <label for="observacion">Mensaje de Observación:</label><br>
+        <textarea id="observacion" name="observacion" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="file" id="archivo" name="archivo" required>
+       
+        <input type="submit" value="Enviar">
+        <input type="submit" value="Borrar">
+    </form>
+
+    <hr>
+
+    <h2>Formulario de Registro</h2>
+    <form action="ruta_a_tu_script_de_procesamiento" method="post">
+        <label for="identificacion">Identificación (Teléfono):</label><br>
+        <input type="tel" id="identificacion" name="identificacion" required><br><br>
+
+        <label for="tipo_documento">Tipo de Documento:</label><br>
+        <select id="tipo_documento" name="tipo_documento" required>
+            <option value="dni">Cedula de Ciudadania</option>
+            <option value="pasaporte">Tarjeta de Identidad</option>
+            <option value="carnet_extranjeria">Registro Civil</option>
+        </select><br><br>
+
+        <label for="nombre_completo">Nombre Completo:</label><br>
+        <input type="text" id="nombre_completo" name="nombre_completo" required><br><br>
+
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>
