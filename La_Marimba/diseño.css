@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+body{
+    
+    color: #ededed;
+}
+
+.header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.logo-img {
+    width: 250px; /* Ajusta el ancho del logo según tus necesidades */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Elimina cualquier espacio en blanco debajo del logo */
+}
+
+
+
+.navbar a {
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500; 
+margin-left: 35px;
+transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+color: #00abf0
+}
+
+.inicio {
+    height: 100vh;
+    background-image: linear-gradient(rgba(64, 126, 225, 0.31),rgba(251, 251, 251, 0)),
+	url("wp6897869.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 28% 8%;
+}
+
+.inicio-content {
+max-width: 600px;
+}
+
+
+.inicio-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0.2;
+
+}
+
+.inicio-content h3{
+    font-size: 70px;
+    font-weight: 700;
+    color: #14344b;
+}
+
+.inicio-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: 200;
+}
+
+
+.inicio-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+     width: 380px;
+     height: 50px;
+
+}
+
+.btn-box a{
+    position: relative;
+display: inline-flex;
+justify-content:  center;
+align-items: center;
+    width: 180px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+
+
+.btn-box a:nth-child(2){
+    background: #00abf0;
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #00abf0;
+}
+
+
+.btn-box a:nth-child(2)::before{
+    background: #14344b;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #14344b;
+    z-index: -1;
+    transition: .5s;
+   left: 0;
+ 
+
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+    
+    left: 0;
+}
+
+
+.redes {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.redes a {
+    margin: 12px;
+}
+
+
+
+.redes img {
+
+   display: inline-flex;
+   justify-content: center;
+   width: 45px;
+   height: 45px;
+   background: transparent;
+  
+
+}
+
+
+.banner{
+    width: 20%;
+    padding: 25px;
+    margin-left: 5%;
+    background-color: rgb(14, 210, 245);
+position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 1;
+
+}
+
+
+.tbanner{
+    font-size: 32px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px #2582BB;
+}
+.pbanner{
+    font-weight: bolder;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 20px;
+    color: #f1f1e8;
+    text-shadow: 2px 2px red;
+}
+.elcregistro{
+    color: white;
+    text-decoration: none;
+    padding: 5px !important;
+    border-radius: 8px !important;
+    float: right;
+    font-size: 18px;
+}
+
+
+
+
+.empresa{
+    width: 100%;
+    height: 450px;
+    background-color: #00abf0;
+    padding: 3%;
+    padding-right: 10px;
+    display: flex;
+}
+.promo{
+    display: inline-flex;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+;
+}
+.promo h4{
+    text-align: center;
+    font-family: italic, cursive;
+    font-size: 25px;
+}
+.conocenos{
+    width: 2000px;
+    margin: 0, 4px;
+    padding-left: 5%;
+    text-align: center;
+    justify-content: center;
+   
+  
+}
+
+
+
+.p-with-margin {
+    margin-bottom: 0px; /* Espacio vertical entre cada párrafo y su botón en el primer artículo */
+}
+
+.conocemos .btn-box-empresa {
+    margin-top: 10px; /* Espacio vertical entre cada botón y su párrafo en el primer artículo */
+}
+
+/* Estilos para el segundo artículo */
+.buses .p-with-margin {
+    margin-bottom: 80px; /* Espacio vertical entre cada párrafo y su botón en el segundo artículo */
+}
+
+.buses .btn-box-empresa {
+    margin-top: 30px; /* Espacio vertical entre cada botón y su párrafo en el segundo artículo */
+}
+
+/* Estilos para el tercer artículo */
+.rutas .p-with-margin {
+    margin-bottom: 0px; /* Espacio vertical entre cada párrafo y su botón en el tercer artículo */
+}
+
+.rutas .btn-box-empresa {
+    margin-top: 30px; /* Espacio vertical entre cada botón y su párrafo en el tercer artículo */
+}
+
+/* Estilos para el cuarto artículo (reserva) */
+.reserva .btn-box-empresa {
+    margin-top: 10px; /* Espacio vertical entre el botón y su párrafo en el cuarto artículo */
+}
+
+.ruta {
+    font-family: "Poppins", sans-serif;
+    margin-left: 20px; /* Espacio horizontal a la izquierda del segundo article */
+    margin-right: 30px; /* Espacio horizontal a la derecha del segundo article */
+}
+
+
+.empresa h1{
+color: #14344b;
+font-family: "Poppins", sans-serif;
+font-size: 22px;
+
+text-align: center;
+}
+
+p {
+    text-align: center;
+   
+    
+}
+
+a {
+    text-align: center;
+    
+   
+}
+ul {
+    align-items: center;
+    text-align: center;
+}
+
+
+.btn-box-empresa {
+    position: absolute;
+    
+display: inline-flex;
+justify-content:  center;
+align-items: center;
+text-align: center;
+    width: 180px;
+    height: 100%;
+    background: #ffffff;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.empresa .btn-box-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 200px;
+     height: 50px;
+     position: relative;
+     left: 12%;
+
+}
+
+.btn-box-empresa a:hover {
+    color: #00abf0;
+}
+
+.btn-box-empresa a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+   left: 0;
+ 
+
+}
+
+.btn-box-empresa a:hover::before{
+    width: 100%;
+    
+    left: 0;
+}
+
+
+
+
+.buses{
+    width: 1500px;
+    margin: 0, 4px;
+    padding-left: 80px;
+}
+.rutas{
+    width: 1500px;
+    margin: 0, 4px;
+    padding-left: 80px;
+}
+.reserva{
+    width: 100%;
+    margin: 80px, 4px;
+    padding-left: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto, cursive;
+    background-image: url("feliz-pareja-de-turistas-tomando-un-estilo-vida-viajero-selfie-tomándose-en-praga-209755206.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+}
+.reserva:hover{
+    transform: rotate(350deg);
+    transform-origin:right bottom 2;
+    font-size:30px;
+    text-shadow: 2px 2px #EDE60E;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    
+}
+.reserva  {
+    text-decoration: none;
+    color:#00abf0;
+    text-shadow: 2px 2px 2px #454545;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.Politica {
+ text-align: center;
+
+    
+ }
+   
+ 
+ 
+ 
+.politica {
+    font-family: Roboto, cursive;
+    width: 50%;
+    height: 400px;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-left: 30%;
+  
+    font-size: 18px;
+}
+
+
+
+.Mision {
+    text-align: center;
+   
+}
+
+
+.Vision {
+    text-align: center;
+   
+}
+
+
+
+
+
+.coda{
+    display: inline-flex;
+    width: 100%;
+    background-color: #00abf0;
+}
+
+.preguntas{
+    font-family: Roboto, cursive;
+    width: 50%;
+    height: 400px;
+    color: #081b29;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+
+.preguntas span{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.coda {
+    background-image: linear-gradient(#118de0e0,#6193e4cc),
+	url("wp3925553.jpg");
+	background-size: cover;
+}
+
+
+.coda p {
+
+    text-align: left;
+
+    
+}
+
+.social-media p {
+text-align: left;
+}
+
+
+.preguntas li > a{
+    text-decoration-line: none;
+    color: #081b29;
+}
+
+.contacto{
+    flex: left;
+    padding: 40px 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pie {
+    background-color: #081b29;
+    color: #fff;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.pie h2{
+text-align: center;
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.number {
+    transform: translate(7%, -235%);
+    z-index: -1;
+    margin-bottom: -6%;
+}
+
+.social-media {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.social-media a {
+    padding-left: 1%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -10px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+a:hover {
+    color: #f7d63e;
+}
+
+.powered-by {
+    text-align: center;
+    margin-top: 20px;
+    font-size: .8em;
+    opacity: .5;
+}
+
+
+
+
